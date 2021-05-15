@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="task" label="Vaccine Batch" max_length="40" name="x_snc_vac_mfgr_lab_vaccine_batch" sizeclass="8" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Created from Catalog" max_length="40" name="created_from_catalog" type="boolean"/>
+        <element label="Disposed Date &amp; Time" max_length="40" name="disposed_date_time" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" default="0" label="Doses" max_length="40" name="doses" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" default="0" label="Doses Given" max_length="40" name="doses_given" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Estimated Receive Date" max_length="40" name="estimated_receive_date" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="FDA Signoff" max_length="40" name="fda_signoff" type="glide_date_time"/>
+        <element label="Manufactured Date &amp; Time" max_length="40" name="manufactured_date_time" type="glide_date_time"/>
+        <element label="mL" max_length="10" name="ml" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="QA Signoff" max_length="40" name="qa_signoff" type="glide_date_time"/>
+        <element label="Received Date &amp; Time" max_length="40" name="received_date_time" type="glide_date_time"/>
+        <element label="Shipped Date &amp; Time" max_length="40" name="shipped_date_time" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Shipped To" max_length="32" name="shipped_to" reference="x_snc_vac_mfgr_lab_state" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Shipping Reference" max_length="40" name="shipping_reference" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Status" max_length="40" name="status" type="workflow">
+            <choice>
+                <element inactive_on_update="false" label="PCR" sequence="100" value="pcr"/>
+                <element inactive_on_update="false" label="DNA Vector Recombination" sequence="200" value="dna_vector_recombination"/>
+                <element inactive_on_update="false" label="QA" sequence="300" value="QA"/>
+                <element inactive_on_update="false" label="FDA QC" sequence="400" value="fda_qc"/>
+                <element inactive_on_update="false" label="Onsite Storage" sequence="500" value="onsite_storage"/>
+                <element inactive_on_update="false" label="Shipped" sequence="600" value="shipped"/>
+                <element inactive_on_update="false" label="Received" sequence="700" value="received"/>
+                <element inactive_on_update="false" label="Opened for Distribution" sequence="800" value="opened_for_distribution"/>
+                <element inactive_on_update="false" label="Disposed" sequence="900" value="disposed"/>
+            </choice>
+        </element>
+    </element>
+</database>

@@ -1,0 +1,978 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>managing_a_vaccine_batch</internal_name>
+        <label_cache>[{"name":"2cff5efe-d0e1-42ae-b237-04cccf3e7e3b.table_name","label":"10➛Vaccine Batch Table","reference":"x_snc_vac_mfgr_lab_vaccine_batch","reference_display":"Vaccine Batch Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2cff5efe-d0e1-42ae-b237-04cccf3e7e3b.record","label":"10➛Vaccine Batch Record","reference":"x_snc_vac_mfgr_lab_vaccine_batch","reference_display":"Vaccine Batch Record","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b603b530-aecc-4885-a5d7-956b41486664.table_name","label":"10➛Vaccine Batch Table","reference":"x_snc_vac_mfgr_lab_vaccine_batch","reference_display":"Vaccine Batch Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b603b530-aecc-4885-a5d7-956b41486664.record","label":"10➛Vaccine Batch Record","reference":"x_snc_vac_mfgr_lab_vaccine_batch","reference_display":"Vaccine Batch Record","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current","label":"Trigger➛Vaccine Batch Record","reference":"x_snc_vac_mfgr_lab_vaccine_batch","reference_display":"Vaccine Batch","type":"reference","base_type":"reference","attributes":{}},{"name":"ef65e603-de7e-4990-b483-ad89b0323f68.vials","label":"1➛Vials","reference_display":"Vials","type":"integer","base_type":"integer","attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"57d056d0-4e16-475b-96cf-f49b93d994c9"}},{"name":"flow_variable.vial_tracker","label":"Flow Variables➛Vial Tracker","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"8d9c6a6a-9e7c-4269-880e-15bdf9baedf2"}},{"name":"96654e4e-1d66-473b-8502-58b703276772.record","label":"4➛Vial Record","reference":"x_snc_vac_mfgr_lab_vial","reference_display":"Vial Record","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"96654e4e-1d66-473b-8502-58b703276772.table_name","label":"4➛Vial Table","reference":"x_snc_vac_mfgr_lab_vial","reference_display":"Vial Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.shipped_to","label":"Trigger➛Vaccine Batch Record➛Shipped To","reference":"x_snc_vac_mfgr_lab_state","reference_display":"Shipped To","type":"reference","base_type":"reference","parent_table_name":"x_snc_vac_mfgr_lab_vaccine_batch","column_name":"shipped_to"},{"name":"68a0884c-e5fd-4275-8c6f-b18503aa9a9d.answer","label":"7➛Shipping Companies Record","reference":"x_snc_vac_mfgr_lab_shipping_companies","reference_display":"Shipping Companies Record","type":"reference","base_type":"reference","attributes":{}},{"name":"68a0884c-e5fd-4275-8c6f-b18503aa9a9d.table_name","label":"7➛Shipping Companies Table","reference":"x_snc_vac_mfgr_lab_shipping_companies","reference_display":"Shipping Companies Table","type":"table_name","base_type":"table_name","attributes":{}},{"name":"15fe6317-3cbe-4a62-9822-0a4c391c1f10.estimated_ship_date","label":"9➛Estimated Ship Date","reference_display":"Estimated Ship Date","type":"datetime","base_type":"datetime","attributes":{"uiType":"datetime","uiTypeLabel":"Basic Date/Time","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"281ac4c2-a46a-4ecd-be93-51f1cdb18292"}},{"name":"15fe6317-3cbe-4a62-9822-0a4c391c1f10.reference_number","label":"9➛Reference Number","reference_display":"Reference Number","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"dae9b027-6fb6-486d-ab31-0a1fb65267b8"}},{"name":"Created_1.current.shipped_to.name","label":"Trigger➛Vaccine Batch Record➛Shipped To➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"x_snc_vac_mfgr_lab_state","column_name":"name"},{"name":"47cd62e0-1e75-4a45-87eb-d8b34cd2ca8b.estimated_ship_date","label":"9➛Estimated Ship Date","reference_display":"Estimated Ship Date","type":"datetime","base_type":"datetime","attributes":{"uiType":"datetime","uiTypeLabel":"Basic Date/Time","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"281ac4c2-a46a-4ecd-be93-51f1cdb18292"}},{"name":"47cd62e0-1e75-4a45-87eb-d8b34cd2ca8b.reference_number","label":"9➛Reference Number","reference_display":"Reference Number","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"dae9b027-6fb6-486d-ab31-0a1fb65267b8"}},{"name":"48425006-6c79-4629-bcf9-3d0b9ae96795.estimated_ship_date","label":"8➛Estimated Ship Date","type":"datetime","base_type":"datetime","attributes":{"uiTypeLabel":"Basic Date/Time","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"datetime","uiUniqueId":"281ac4c2-a46a-4ecd-be93-51f1cdb18292"}},{"name":"48425006-6c79-4629-bcf9-3d0b9ae96795.reference_number","label":"8➛Reference Number","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"dae9b027-6fb6-486d-ab31-0a1fb65267b8"}},{"name":"68a0884c-e5fd-4275-8c6f-b18503aa9a9d.answer.name","label":"7➛Shipping Companies Record➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"x_snc_vac_mfgr_lab_shipping_companies","column_name":"name"},{"name":"01374684-d59d-4f5c-b6bc-d477a5b23538.record","label":"9➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"01374684-d59d-4f5c-b6bc-d477a5b23538.table_name","label":"9➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>Managing a Vaccine Batch</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-12 04:41:13</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d550844e448c70107f44dce18c708674</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>Managing a Vaccine Batch</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Vaccine Manufacturing &amp; Logistics" source="x_snc_vac_mfgr_lab">987c7518db932c1007b9200c0b9619d7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Vaccine Manufacturing &amp; Logistics">987c7518db932c1007b9200c0b9619d7</sys_scope>
+        <sys_update_name>sys_hub_flow_d550844e448c70107f44dce18c708674</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-15 08:31:17</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=d550844e448c70107f44dce18c708674"/>
+    <sys_variable_value action="delete_multiple" query="document_key=d550844e448c70107f44dce18c708674"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=d550844e448c70107f44dce18c708674^sys_idNOT IN4b90c48e448c70107f44dce18c708612"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Managing a Vaccine Batch">d550844e448c70107f44dce18c708674</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-12 04:42:25</sys_created_on>
+        <sys_id>4b90c48e448c70107f44dce18c708612</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-15 08:31:16</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=4b90c48e448c70107f44dce18c708612"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>4b90c48e448c70107f44dce18c708612</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-12 04:42:25</sys_created_on>
+        <sys_id>0f90c48e448c70107f44dce18c708613</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-12 04:42:25</sys_updated_on>
+        <value>^EQ</value>
+        <variable display_value="Condition">66aadea0c31322002841b63b12d3aebf</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>4b90c48e448c70107f44dce18c708612</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-12 04:42:25</sys_created_on>
+        <sys_id>8790c48e448c70107f44dce18c708614</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-12 04:42:25</sys_updated_on>
+        <value>x_snc_vac_mfgr_lab_vaccine_batch</value>
+        <variable display_value="Table">cfca92e0c31322002841b63b12d3ae00</variable>
+    </sys_variable_value>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=d550844e448c70107f44dce18c708674^sys_idNOT IN1550c08e448c70107f44dce18c70866f"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>d550844e448c70107f44dce18c708674</id>
+        <name>Managing a Vaccine Batch</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-12 04:41:13</sys_created_on>
+        <sys_id>1550c08e448c70107f44dce18c70866f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-12 04:41:13</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_input action="delete_multiple" query="model=d550844e448c70107f44dce18c708674^sys_idNOT INcb90c48e448c70107f44dce18c70860b,fa90484e448c70107f44dce18c708642"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Managing a Vaccine Batch">d550844e448c70107f44dce18c708674</model>
+        <model_id>d550844e448c70107f44dce18c708674</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_d550844e448c70107f44dce18c708674</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-12 04:42:25</sys_created_on>
+        <sys_id>cb90c48e448c70107f44dce18c70860b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Vaccine Manufacturing &amp; Logistics">987c7518db932c1007b9200c0b9619d7</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-12 04:42:25</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Managing a Vaccine Batch">d550844e448c70107f44dce18c708674</model>
+        <model_id>d550844e448c70107f44dce18c708674</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_d550844e448c70107f44dce18c708674</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-12 04:42:25</sys_created_on>
+        <sys_id>fa90484e448c70107f44dce18c708642</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Vaccine Manufacturing &amp; Logistics">987c7518db932c1007b9200c0b9619d7</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-12 04:42:25</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_instance action="delete_multiple" query="flow=d550844e448c70107f44dce18c708674^sys_idNOT IN28c1984fed0030107f44a347d5aaa6f1,68c1984fed0030107f44a347d5aaa6f7,ac22c4ce448c70107f44dce18c708688,db214c8e448c70107f44dce18c708661"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create New Shipping Label">5816d0c6db9f205007b9200c0b96194b</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Managing a Vaccine Batch">d550844e448c70107f44dce18c708674</flow>
+        <order>8</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-15 08:31:16</sys_created_on>
+        <sys_id>28c1984fed0030107f44a347d5aaa6f1</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Vaccine Manufacturing &amp; Logistics">987c7518db932c1007b9200c0b9619d7</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-15 08:31:16</sys_updated_on>
+        <ui_id>48425006-6c79-4629-bcf9-3d0b9ae96795</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=28c1984fed0030107f44a347d5aaa6f1"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>28c1984fed0030107f44a347d5aaa6f1</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-15 08:31:16</sys_created_on>
+        <sys_id>6cc1984fed0030107f44a347d5aaa6f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-15 08:31:16</sys_updated_on>
+        <value/>
+        <variable display_value="Preferred Carrier">1032fe82db97605007b9200c0b96195d</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=28c1984fed0030107f44a347d5aaa6f1"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>batch_record</field>
+        <id>28c1984fed0030107f44a347d5aaa6f1</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-15 08:31:16</sys_created_on>
+        <sys_id>60c1984fed0030107f44a347d5aaa6f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-15 08:31:16</sys_updated_on>
+        <table>var__m_sys_hub_action_input_5816d0c6db9f205007b9200c0b96194b</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>destination_state</field>
+        <id>28c1984fed0030107f44a347d5aaa6f1</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-15 08:31:16</sys_created_on>
+        <sys_id>28c1984fed0030107f44a347d5aaa6f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-15 08:31:16</sys_updated_on>
+        <table>var__m_sys_hub_action_input_5816d0c6db9f205007b9200c0b96194b</table>
+        <value>{{Created_1.current.shipped_to}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>preferred_carrier</field>
+        <id>28c1984fed0030107f44a347d5aaa6f1</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-15 08:31:16</sys_created_on>
+        <sys_id>e8c1984fed0030107f44a347d5aaa6f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-15 08:31:16</sys_updated_on>
+        <table>var__m_sys_hub_action_input_5816d0c6db9f205007b9200c0b96194b</table>
+        <value>{{68a0884c-e5fd-4275-8c6f-b18503aa9a9d.answer.name}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Managing a Vaccine Batch">d550844e448c70107f44dce18c708674</flow>
+        <order>9</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-15 08:31:16</sys_created_on>
+        <sys_id>68c1984fed0030107f44a347d5aaa6f7</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Vaccine Manufacturing &amp; Logistics">987c7518db932c1007b9200c0b9619d7</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-15 08:31:16</sys_updated_on>
+        <ui_id>01374684-d59d-4f5c-b6bc-d477a5b23538</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=68c1984fed0030107f44a347d5aaa6f7"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>68c1984fed0030107f44a347d5aaa6f7</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-15 08:31:17</sys_created_on>
+        <sys_id>a4c1984fed0030107f44a347d5aaa6f9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-15 08:31:17</sys_updated_on>
+        <value>x_snc_vac_mfgr_lab_vaccine_batch</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=68c1984fed0030107f44a347d5aaa6f7"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>68c1984fed0030107f44a347d5aaa6f7</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-15 08:31:16</sys_created_on>
+        <sys_id>60c1984fed0030107f44a347d5aaa6f9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-15 08:31:16</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>68c1984fed0030107f44a347d5aaa6f7</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-15 08:31:16</sys_created_on>
+        <sys_id>acc1984fed0030107f44a347d5aaa6f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-15 08:31:16</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>68c1984fed0030107f44a347d5aaa6f7</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-15 08:31:17</sys_created_on>
+        <sys_id>24c1984fed0030107f44a347d5aaa6f9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-15 08:31:17</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>shipping_reference={{48425006-6c79-4629-bcf9-3d0b9ae96795.reference_number}}^estimated_receive_date={{48425006-6c79-4629-bcf9-3d0b9ae96795.estimated_ship_date}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Managing a Vaccine Batch">d550844e448c70107f44dce18c708674</flow>
+        <order>4</order>
+        <parent_ui_id>c26afd66-d043-49b7-80cf-f27cdad3864a</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-12 04:49:04</sys_created_on>
+        <sys_id>ac22c4ce448c70107f44dce18c708688</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="Vaccine Manufacturing &amp; Logistics">987c7518db932c1007b9200c0b9619d7</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-15 08:31:16</sys_updated_on>
+        <ui_id>96654e4e-1d66-473b-8502-58b703276772</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ac22c4ce448c70107f44dce18c708688"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ac22c4ce448c70107f44dce18c708688</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-12 04:49:04</sys_created_on>
+        <sys_id>6822c4ce448c70107f44dce18c70868a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-12 04:49:04</sys_updated_on>
+        <value>x_snc_vac_mfgr_lab_vial</value>
+        <variable display_value="Table">61e05916c31332002841b63b12d3aee4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=ac22c4ce448c70107f44dce18c708688"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>ac22c4ce448c70107f44dce18c708688</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-12 04:49:04</sys_created_on>
+        <sys_id>2422c4ce448c70107f44dce18c70868a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-12 04:49:04</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>ac22c4ce448c70107f44dce18c708688</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-12 04:49:04</sys_created_on>
+        <sys_id>e422c4ce448c70107f44dce18c70868a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-12 04:49:04</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value>batch={{Created_1.current}}^doses=10^ml=5</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Find Number Vials in Batch">4de91c8adb9f205007b9200c0b961983</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Managing a Vaccine Batch">d550844e448c70107f44dce18c708674</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-12 04:44:54</sys_created_on>
+        <sys_id>db214c8e448c70107f44dce18c708661</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="Vaccine Manufacturing &amp; Logistics">987c7518db932c1007b9200c0b9619d7</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-15 08:31:16</sys_updated_on>
+        <ui_id>ef65e603-de7e-4990-b483-ad89b0323f68</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=db214c8e448c70107f44dce18c708661"/>
+    <sys_element_mapping action="delete_multiple" query="id=db214c8e448c70107f44dce18c708661"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>vaccine_batch</field>
+        <id>db214c8e448c70107f44dce18c708661</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-12 04:44:54</sys_created_on>
+        <sys_id>27214c8e448c70107f44dce18c708664</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-12 04:44:54</sys_updated_on>
+        <table>var__m_sys_hub_action_input_4de91c8adb9f205007b9200c0b961983</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=db214c8e448c70107f44dce18c708661^sys_idNOT IN27214c8e448c70107f44dce18c708663"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <input_name>vaccine_batch</input_name>
+        <instance>db214c8e448c70107f44dce18c708661</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"vaccine_batch":{"scriptActive":false}}</script>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-12 04:44:54</sys_created_on>
+        <sys_id>27214c8e448c70107f44dce18c708663</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-12 04:44:54</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=d550844e448c70107f44dce18c708674^sys_idNOT IN71e60047ed0030107f44a347d5aaa6d8,876288ce448c70107f44dce18c7086f7,a022c4ce448c70107f44dce18c70867d,ac22c4ce448c70107f44dce18c708681"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">b9e60047ed0030107f44a347d5aaa6d7</block>
+        <comment/>
+        <connected_to/>
+        <decision_table display_value="Preferred Shipper">a3d9e13ddbd3a0505b1e19f05b96198e</decision_table>
+        <decision_table_inputs/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Managing a Vaccine Batch">d550844e448c70107f44dce18c708674</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Make a decision">578e90270b2313009002cab937673a7d</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-15 07:43:51</sys_created_on>
+        <sys_id>71e60047ed0030107f44a347d5aaa6d8</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Vaccine Manufacturing &amp; Logistics">987c7518db932c1007b9200c0b9619d7</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-15 08:31:16</sys_updated_on>
+        <ui_id>68a0884c-e5fd-4275-8c6f-b18503aa9a9d</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=71e60047ed0030107f44a347d5aaa6d8"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>71e60047ed0030107f44a347d5aaa6d8</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-15 07:43:51</sys_created_on>
+        <sys_id>31e60047ed0030107f44a347d5aaa6de</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-15 07:43:51</sys_updated_on>
+        <value>x_snc_vac_mfgr_lab_shipping_companies</value>
+        <variable display_value="Answer Table">4cbdbf94c35823002841b63b12d3aeb6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>71e60047ed0030107f44a347d5aaa6d8</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-15 07:43:51</sys_created_on>
+        <sys_id>7de60047ed0030107f44a347d5aaa6de</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-15 07:43:51</sys_updated_on>
+        <value>Choose Carrier</value>
+        <variable display_value="Decision Label">2d6a2ca70b2313009002cab937673aff</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>71e60047ed0030107f44a347d5aaa6d8</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-15 08:31:16</sys_created_on>
+        <sys_id>acc1984fed0030107f44a347d5aaa6e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-15 08:31:16</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Use Branches">7f2f5f9173020010cbfec9d234f6a79b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>71e60047ed0030107f44a347d5aaa6d8</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-15 07:43:51</sys_created_on>
+        <sys_id>b9e60047ed0030107f44a347d5aaa6de</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-15 07:43:51</sys_updated_on>
+        <value>a3d9e13ddbd3a0505b1e19f05b96198e</value>
+        <variable display_value="Decision Table">a9a0bc2b0b2313009002cab937673ac6</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=71e60047ed0030107f44a347d5aaa6d8"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>answer_table</field>
+        <id>71e60047ed0030107f44a347d5aaa6d8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-15 07:43:51</sys_created_on>
+        <sys_id>b1e60047ed0030107f44a347d5aaa6dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-15 07:43:51</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_578e90270b2313009002cab937673a7d</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>decision_label</field>
+        <id>71e60047ed0030107f44a347d5aaa6d8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-15 07:43:51</sys_created_on>
+        <sys_id>bde60047ed0030107f44a347d5aaa6dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-15 07:43:51</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_578e90270b2313009002cab937673a7d</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>decision_table</field>
+        <id>71e60047ed0030107f44a347d5aaa6d8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-15 07:43:51</sys_created_on>
+        <sys_id>f9e60047ed0030107f44a347d5aaa6dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-15 07:43:51</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_578e90270b2313009002cab937673a7d</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>u_state</field>
+        <id>71e60047ed0030107f44a347d5aaa6d8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-15 07:43:51</sys_created_on>
+        <sys_id>79e60047ed0030107f44a347d5aaa6df</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-15 07:43:51</sys_updated_on>
+        <table>var__m_sys_decision_input_a3d9e13ddbd3a0505b1e19f05b96198e</table>
+        <value>{{Created_1.current.shipped_to}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">cf6288ce448c70107f44dce18c7086f6</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Managing a Vaccine Batch">d550844e448c70107f44dce18c708674</flow>
+        <flow_variable/>
+        <flow_variables_assigned>vial_tracker</flow_variables_assigned>
+        <inputs/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>c26afd66-d043-49b7-80cf-f27cdad3864a</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-12 04:50:20</sys_created_on>
+        <sys_id>876288ce448c70107f44dce18c7086f7</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Vaccine Manufacturing &amp; Logistics">987c7518db932c1007b9200c0b9619d7</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-15 08:31:16</sys_updated_on>
+        <ui_id>c736d25a-ba5f-4178-9357-fbed3c3a59bf</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=876288ce448c70107f44dce18c7086f7"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>876288ce448c70107f44dce18c7086f7</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-12 04:50:20</sys_created_on>
+        <sys_id>036288ce448c70107f44dce18c7086fa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-12 04:50:20</sys_updated_on>
+        <value/>
+        <variable display_value="Vial Tracker">df214c8e448c70107f44dce18c708655</variable>
+    </sys_variable_value>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=876288ce448c70107f44dce18c7086f7^sys_idNOT IN476288ce448c70107f44dce18c7086f8"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>vial_tracker</input_name>
+        <instance>876288ce448c70107f44dce18c7086f7</instance>
+        <referenced_table>sys_hub_flow_logic</referenced_table>
+        <script>{"vial_tracker":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\n\nreturn fd_data.flow_var.vial_tracker - 1;"}}</script>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-12 04:50:20</sys_created_on>
+        <sys_id>476288ce448c70107f44dce18c7086f8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-15 07:59:54</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">6422c4ce448c70107f44dce18c70867c</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Managing a Vaccine Batch">d550844e448c70107f44dce18c708674</flow>
+        <flow_variable/>
+        <flow_variable/>
+        <flow_variables_assigned>vial_tracker</flow_variables_assigned>
+        <inputs/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-12 04:49:04</sys_created_on>
+        <sys_id>a022c4ce448c70107f44dce18c70867d</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Vaccine Manufacturing &amp; Logistics">987c7518db932c1007b9200c0b9619d7</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-15 08:31:16</sys_updated_on>
+        <ui_id>7dbcf3d1-94dc-4569-8c6f-d1c8020cd9d5</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=a022c4ce448c70107f44dce18c70867d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>a022c4ce448c70107f44dce18c70867d</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-12 04:49:04</sys_created_on>
+        <sys_id>ec22c4ce448c70107f44dce18c708680</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-12 04:49:04</sys_updated_on>
+        <value/>
+        <variable display_value="Vial Tracker">df214c8e448c70107f44dce18c708655</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=a022c4ce448c70107f44dce18c70867d"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>vial_tracker</field>
+        <id>a022c4ce448c70107f44dce18c70867d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-12 04:49:04</sys_created_on>
+        <sys_id>6c22c4ce448c70107f44dce18c708680</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-12 04:49:04</sys_updated_on>
+        <table>var__m_sys_hub_flow_variable_d550844e448c70107f44dce18c708674</table>
+        <value>{{ef65e603-de7e-4990-b483-ad89b0323f68.vials}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">e422c4ce448c70107f44dce18c708681</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Managing a Vaccine Batch">d550844e448c70107f44dce18c708674</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Do the following until">eaeb040687210300e6c2c88fc0e3ec89</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-12 04:49:04</sys_created_on>
+        <sys_id>ac22c4ce448c70107f44dce18c708681</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Vaccine Manufacturing &amp; Logistics">987c7518db932c1007b9200c0b9619d7</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-15 08:31:16</sys_updated_on>
+        <ui_id>c26afd66-d043-49b7-80cf-f27cdad3864a</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=ac22c4ce448c70107f44dce18c708681"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>ac22c4ce448c70107f44dce18c708681</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-12 04:49:04</sys_created_on>
+        <sys_id>2422c4ce448c70107f44dce18c708685</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-12 04:49:04</sys_updated_on>
+        <value>While Vial Tracker is greater than 0</value>
+        <variable display_value="Condition Label">bda2cb0473031300612c273ffff6a750</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=ac22c4ce448c70107f44dce18c708681"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>ac22c4ce448c70107f44dce18c708681</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-12 04:49:04</sys_created_on>
+        <sys_id>a022c4ce448c70107f44dce18c708685</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-15 07:59:54</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_eaeb040687210300e6c2c88fc0e3ec89</table>
+        <value>{{flow_variable.vial_tracker}}=0</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>ac22c4ce448c70107f44dce18c708681</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-12 04:49:04</sys_created_on>
+        <sys_id>ec22c4ce448c70107f44dce18c708684</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-12 04:49:04</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_eaeb040687210300e6c2c88fc0e3ec89</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_variable action="delete_multiple" query="model=d550844e448c70107f44dce18c708674^sys_idNOT INdf214c8e448c70107f44dce18c708655"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=8d9c6a6a-9e7c-4269-880e-15bdf9baedf2</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>vial_tracker</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Vial Tracker</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Managing a Vaccine Batch">d550844e448c70107f44dce18c708674</model>
+        <model_id>d550844e448c70107f44dce18c708674</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_d550844e448c70107f44dce18c708674</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-12 04:44:54</sys_created_on>
+        <sys_id>df214c8e448c70107f44dce18c708655</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Vial Tracker</sys_name>
+        <sys_package display_value="Vaccine Manufacturing &amp; Logistics" source="x_snc_vac_mfgr_lab">987c7518db932c1007b9200c0b9619d7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Vaccine Manufacturing &amp; Logistics">987c7518db932c1007b9200c0b9619d7</sys_scope>
+        <sys_update_name>sys_hub_flow_variable_df214c8e448c70107f44dce18c708655</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-12 04:44:54</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_d550844e448c70107f44dce18c708674^sys_idNOT IN0f90c48e448c70107f44dce18c70860f,8f90c48e448c70107f44dce18c708609"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_d550844e448c70107f44dce18c708674</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-12 04:42:25</sys_created_on>
+        <sys_id>0f90c48e448c70107f44dce18c70860f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Vaccine Manufacturing &amp; Logistics" source="x_snc_vac_mfgr_lab">987c7518db932c1007b9200c0b9619d7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Vaccine Manufacturing &amp; Logistics">987c7518db932c1007b9200c0b9619d7</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-12 04:42:25</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_d550844e448c70107f44dce18c708674</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-12 04:42:25</sys_created_on>
+        <sys_id>8f90c48e448c70107f44dce18c708609</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Vaccine Manufacturing &amp; Logistics" source="x_snc_vac_mfgr_lab">987c7518db932c1007b9200c0b9619d7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Vaccine Manufacturing &amp; Logistics">987c7518db932c1007b9200c0b9619d7</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-12 04:42:25</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+</record_update>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_snc_vac_mfgr_lab.state_user" name="x_snc_vac_mfgr_lab.state_user">c9824a9cdb932c1007b9200c0b96198d</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-03-30 20:53:32</sys_created_on>
+        <sys_id>09824a9cdb932c1007b9200c0b961990</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>c9824a9cdb932c1007b9200c0b96198d</sys_name>
+        <sys_package display_value="Vaccine Manufacturing &amp; Logistics" source="x_snc_vac_mfgr_lab">987c7518db932c1007b9200c0b9619d7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Vaccine Manufacturing &amp; Logistics">987c7518db932c1007b9200c0b9619d7</sys_scope>
+        <sys_update_name>sys_embedded_help_role_09824a9cdb932c1007b9200c0b961990</sys_update_name>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-03-30 20:53:32</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

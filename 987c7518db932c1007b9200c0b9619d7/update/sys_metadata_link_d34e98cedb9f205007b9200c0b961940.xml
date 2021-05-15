@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>8ce90654dbd32c1007b9200c0b961966</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="x_snc_vac_mfgr_lab_vaccine_batch">
+    <x_snc_vac_mfgr_lab_vaccine_batch action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <activity_due/>
+        <additional_assignee_list/>
+        <approval>not requested</approval>
+        <approval_history/>
+        <approval_set/>
+        <assigned_to/>
+        <assignment_group/>
+        <business_duration/>
+        <business_service/>
+        <calendar_duration/>
+        <close_notes/>
+        <closed_at/>
+        <closed_by/>
+        <cmdb_ci/>
+        <comments/>
+        <comments_and_work_notes/>
+        <company/>
+        <contact_type/>
+        <contract/>
+        <correlation_display/>
+        <correlation_id/>
+        <created_from_catalog>false</created_from_catalog>
+        <delivery_plan/>
+        <delivery_task/>
+        <description/>
+        <disposed_date_time>2021-04-10 23:49:23</disposed_date_time>
+        <doses>0</doses>
+        <doses_given>0</doses_given>
+        <due_date/>
+        <escalation>0</escalation>
+        <estimated_receive_date/>
+        <expected_start/>
+        <fda_signoff>2021-03-31 23:49:18</fda_signoff>
+        <follow_up/>
+        <group_list/>
+        <impact>3</impact>
+        <knowledge>false</knowledge>
+        <location/>
+        <made_sla>true</made_sla>
+        <manufactured_date_time>2021-03-28 23:49:00</manufactured_date_time>
+        <ml>105</ml>
+        <number>VB0001008</number>
+        <opened_at>2021-03-30 21:25:42</opened_at>
+        <opened_by display_value="Michael Slabodnick">1f5b4a5c4f1b22005ec7c3818110c7c6</opened_by>
+        <order/>
+        <parent/>
+        <priority>4</priority>
+        <qa_signoff>2021-03-30 23:49:12</qa_signoff>
+        <reassignment_count>0</reassignment_count>
+        <received_date_time>2021-04-09 23:49:07</received_date_time>
+        <rejection_goto/>
+        <route_reason/>
+        <service_offering/>
+        <shipped_date_time>2021-04-07 23:49:04</shipped_date_time>
+        <shipped_to display_value="NEW YORK">e4f282dcdb932c1007b9200c0b961982</shipped_to>
+        <shipping_reference/>
+        <short_description/>
+        <skills/>
+        <sla_due/>
+        <state>1</state>
+        <status>disposed</status>
+        <sys_class_name>x_snc_vac_mfgr_lab_vaccine_batch</sys_class_name>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-03-30 21:25:52</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8ce90654dbd32c1007b9200c0b961966</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 18:19:38</sys_updated_on>
+        <task_effective_number>VB0001008</task_effective_number>
+        <time_worked/>
+        <universal_request/>
+        <upon_approval>proceed</upon_approval>
+        <upon_reject>cancel</upon_reject>
+        <urgency>3</urgency>
+        <user_input/>
+        <variables/>
+        <watch_list/>
+        <wf_activity/>
+        <work_end/>
+        <work_notes/>
+        <work_notes_list/>
+        <work_start/>
+    </x_snc_vac_mfgr_lab_vaccine_batch>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:05:04</sys_created_on>
+        <sys_id>d34e98cedb9f205007b9200c0b961940</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>VB0001008</sys_name>
+        <sys_package display_value="Vaccine Manufacturing &amp; Logistics" source="x_snc_vac_mfgr_lab">987c7518db932c1007b9200c0b9619d7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Vaccine Manufacturing &amp; Logistics">987c7518db932c1007b9200c0b9619d7</sys_scope>
+        <sys_update_name>sys_metadata_link_d34e98cedb9f205007b9200c0b961940</sys_update_name>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 18:19:48</sys_updated_on>
+        <tablename>x_snc_vac_mfgr_lab_vaccine_batch</tablename>
+    </sys_metadata_link>
+</record_update>

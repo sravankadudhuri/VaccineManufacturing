@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD22516c822fdf205040fd197255018217</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>987c7518db932c1007b9200c0b9619d7</scope_name>
+        <serialized_content>{"FlowDesigner:FD22516c822fdf205040fd197255018217":{"$COCollectionField":[{"Data":{"date":"String","date.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"date\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"dfad5b95-3d6e-4a10-a108-8ea466a516f0\"}"},"cases":"Integer","cases.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"cases\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"e3a881cf-0487-4d00-83e5-a9196953cc11\"}"},"state":"String","state.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"state\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"ffc35409-3a13-4d04-9b3b-c317c62ebe56\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Output Array\",\"mandatory\":\"false\",\"child_name\":\"Data\",\"uiUniqueId\":\"83575980-1397-4da7-88c0-657d6f5bbc85\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD22516c822fdf205040fd197255018217\",\"child_label\":\"Data\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"9cc795fb-e0f1-43a0-a2b9-17548524ec9d\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD22516c822fdf205040fd197255018217.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Output Array\",\"mandatory\":\"false\",\"child_name\":\"Data\",\"uiUniqueId\":\"83575980-1397-4da7-88c0-657d6f5bbc85\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD22516c822fdf205040fd197255018217\",\"child_label\":\"Data\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"9cc795fb-e0f1-43a0-a2b9-17548524ec9d\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:18:23</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e2516c82dbdf205007b9200c0b961917</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FD22516c822fdf205040fd197255018217</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Vaccine Manufacturing &amp; Logistics" source="x_snc_vac_mfgr_lab">987c7518db932c1007b9200c0b9619d7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Vaccine Manufacturing &amp; Logistics">987c7518db932c1007b9200c0b9619d7</sys_scope>
+        <sys_update_name>sys_complex_object_e2516c82dbdf205007b9200c0b961917</sys_update_name>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:18:23</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+</record_update>

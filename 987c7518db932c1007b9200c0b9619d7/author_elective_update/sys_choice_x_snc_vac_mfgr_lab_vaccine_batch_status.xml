@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="status" table="x_snc_vac_mfgr_lab_vaccine_batch" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>status</element>
+            <name>x_snc_vac_mfgr_lab_vaccine_batch</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>michael.slabodnick</sys_created_by>
+            <sys_created_on>2021-03-30 20:43:17</sys_created_on>
+            <sys_id>7e2086d8db932c1007b9200c0b9619a4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>status</sys_name>
+            <sys_package display_value="Vaccine Manufacturing &amp; Logistics" source="x_snc_vac_mfgr_lab">987c7518db932c1007b9200c0b9619d7</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Vaccine Manufacturing &amp; Logistics">987c7518db932c1007b9200c0b9619d7</sys_scope>
+            <sys_update_name>sys_choice_x_snc_vac_mfgr_lab_vaccine_batch_status</sys_update_name>
+            <sys_updated_by>michael.slabodnick</sys_updated_by>
+            <sys_updated_on>2021-03-30 20:43:17</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>PCR</label>
+            <language>en</language>
+            <name>x_snc_vac_mfgr_lab_vaccine_batch</name>
+            <sequence>100</sequence>
+            <synonyms/>
+            <sys_created_by>michael.slabodnick</sys_created_by>
+            <sys_created_on>2021-03-30 20:43:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>362086d8db932c1007b9200c0b9619a4</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>michael.slabodnick</sys_updated_by>
+            <sys_updated_on>2021-03-30 20:59:06</sys_updated_on>
+            <value>pcr</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>DNA Vector Recombination</label>
+            <language>en</language>
+            <name>x_snc_vac_mfgr_lab_vaccine_batch</name>
+            <sequence>200</sequence>
+            <synonyms/>
+            <sys_created_by>michael.slabodnick</sys_created_by>
+            <sys_created_on>2021-03-30 20:43:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9f20c2d8db932c1007b9200c0b961901</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>michael.slabodnick</sys_updated_by>
+            <sys_updated_on>2021-03-30 20:59:13</sys_updated_on>
+            <value>dna_vector_recombination</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>QA</label>
+            <language>en</language>
+            <name>x_snc_vac_mfgr_lab_vaccine_batch</name>
+            <sequence>300</sequence>
+            <synonyms/>
+            <sys_created_by>michael.slabodnick</sys_created_by>
+            <sys_created_on>2021-03-30 20:43:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b230cad8db932c1007b9200c0b96192d</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>michael.slabodnick</sys_updated_by>
+            <sys_updated_on>2021-03-30 20:59:22</sys_updated_on>
+            <value>QA</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>FDA QC</label>
+            <language>en</language>
+            <name>x_snc_vac_mfgr_lab_vaccine_batch</name>
+            <sequence>400</sequence>
+            <synonyms/>
+            <sys_created_by>michael.slabodnick</sys_created_by>
+            <sys_created_on>2021-03-30 20:44:02</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ff404ed8db932c1007b9200c0b9619e3</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>michael.slabodnick</sys_updated_by>
+            <sys_updated_on>2021-03-30 20:59:24</sys_updated_on>
+            <value>fda_qc</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Onsite Storage</label>
+            <language>en</language>
+            <name>x_snc_vac_mfgr_lab_vaccine_batch</name>
+            <sequence>500</sequence>
+            <synonyms/>
+            <sys_created_by>michael.slabodnick</sys_created_by>
+            <sys_created_on>2021-03-30 20:44:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>35508ed8db932c1007b9200c0b96194d</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>michael.slabodnick</sys_updated_by>
+            <sys_updated_on>2021-03-30 20:59:28</sys_updated_on>
+            <value>onsite_storage</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Shipped</label>
+            <language>en</language>
+            <name>x_snc_vac_mfgr_lab_vaccine_batch</name>
+            <sequence>600</sequence>
+            <synonyms/>
+            <sys_created_by>michael.slabodnick</sys_created_by>
+            <sys_created_on>2021-03-30 20:44:24</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fb5042d8db932c1007b9200c0b96192f</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>michael.slabodnick</sys_updated_by>
+            <sys_updated_on>2021-03-30 20:59:31</sys_updated_on>
+            <value>shipped</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Received</label>
+            <language>en</language>
+            <name>x_snc_vac_mfgr_lab_vaccine_batch</name>
+            <sequence>700</sequence>
+            <synonyms/>
+            <sys_created_by>michael.slabodnick</sys_created_by>
+            <sys_created_on>2021-03-30 20:44:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8f60cad8db932c1007b9200c0b961920</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>michael.slabodnick</sys_updated_by>
+            <sys_updated_on>2021-03-30 20:59:36</sys_updated_on>
+            <value>received</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Opened for Distribution</label>
+            <language>en</language>
+            <name>x_snc_vac_mfgr_lab_vaccine_batch</name>
+            <sequence>800</sequence>
+            <synonyms/>
+            <sys_created_by>michael.slabodnick</sys_created_by>
+            <sys_created_on>2021-03-30 20:44:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f870ced8db932c1007b9200c0b9619c1</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>michael.slabodnick</sys_updated_by>
+            <sys_updated_on>2021-03-30 20:59:39</sys_updated_on>
+            <value>opened_for_distribution</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Disposed</label>
+            <language>en</language>
+            <name>x_snc_vac_mfgr_lab_vaccine_batch</name>
+            <sequence>900</sequence>
+            <synonyms/>
+            <sys_created_by>michael.slabodnick</sys_created_by>
+            <sys_created_on>2021-03-30 20:45:05</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ba80ced8db932c1007b9200c0b9619c2</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>michael.slabodnick</sys_updated_by>
+            <sys_updated_on>2021-03-30 20:59:41</sys_updated_on>
+            <value>disposed</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

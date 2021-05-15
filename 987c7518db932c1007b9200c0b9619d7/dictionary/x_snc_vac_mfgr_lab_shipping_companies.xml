@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Shipping Companies" max_length="40" name="x_snc_vac_mfgr_lab_shipping_companies" sizeclass="2" type="collection">
+        <element display="true" label="Name" max_length="100" name="name" type="string"/>
+    </element>
+</database>

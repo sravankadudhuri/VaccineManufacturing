@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD4785a00ae8df20506ca46ff0ca502e95</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>987c7518db932c1007b9200c0b9619d7</scope_name>
+        <serialized_content>{"FlowDesigner:FD4785a00ae8df20506ca46ff0ca502e95":{"$COCollectionField":["Integer"],"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD4785a00ae8df20506ca46ff0ca502e95.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"Case Array\",\"mandatory\":\"false\",\"child_name\":\"Case Array_child0\",\"uiUniqueId\":\"2356a7a6-893d-4678-b27f-b6f7bbe507ef\",\"uiTypeLabel\":\"Array.Integer\",\"co_type_name\":\"FD4785a00ae8df20506ca46ff0ca502e95\",\"child_label\":\"Case Array_child0\",\"child_type_label\":\"Integer\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"array.integer\",\"child_defaultValue\":\"\",\"child_type\":\"integer\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"95579158-23b8-4009-a27c-14ea4f52f284\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:36:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0b85a00adbdf205007b9200c0b961995</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FD4785a00ae8df20506ca46ff0ca502e95</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Vaccine Manufacturing &amp; Logistics" source="x_snc_vac_mfgr_lab">987c7518db932c1007b9200c0b9619d7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Vaccine Manufacturing &amp; Logistics">987c7518db932c1007b9200c0b9619d7</sys_scope>
+        <sys_update_name>sys_complex_object_0b85a00adbdf205007b9200c0b961995</sys_update_name>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:36:44</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+</record_update>

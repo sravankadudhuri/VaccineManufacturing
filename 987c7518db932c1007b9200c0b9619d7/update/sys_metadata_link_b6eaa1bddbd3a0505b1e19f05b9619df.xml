@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>5fca61bddbd3a0505b1e19f05b961996</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_decision_question">
+    <sys_decision_question action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <answer>e2c8edf9dbd3a0505b1e19f05b961926</answer>
+        <condition table="var__m_sys_decision_input_a3d9e13ddbd3a0505b1e19f05b96198e">u_state=e0f282dcdb932c1007b9200c0b961983^EQ<item display_table="x_snc_vac_mfgr_lab_state" display_value="OHIO" endquery="false" field="u_state" goto="false" newquery="false" operator="=" or="false" value="e0f282dcdb932c1007b9200c0b961983"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <decision_table display_value="Preferred Shipper">a3d9e13ddbd3a0505b1e19f05b96198e</decision_table>
+        <default_answer>false</default_answer>
+        <input_table>var__m_sys_decision_input_a3d9e13ddbd3a0505b1e19f05b96198e</input_table>
+        <label>Ohio</label>
+        <order>0</order>
+        <sys_class_name>sys_decision_question</sys_class_name>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-04 11:01:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5fca61bddbd3a0505b1e19f05b961996</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Vaccine Manufacturing &amp; Logistics">987c7518db932c1007b9200c0b9619d7</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-04 11:01:20</sys_updated_on>
+    </sys_decision_question>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-04 11:01:20</sys_created_on>
+        <sys_id>b6eaa1bddbd3a0505b1e19f05b9619df</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Ohio</sys_name>
+        <sys_package display_value="Vaccine Manufacturing &amp; Logistics" source="x_snc_vac_mfgr_lab">987c7518db932c1007b9200c0b9619d7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Vaccine Manufacturing &amp; Logistics">987c7518db932c1007b9200c0b9619d7</sys_scope>
+        <sys_update_name>sys_metadata_link_b6eaa1bddbd3a0505b1e19f05b9619df</sys_update_name>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-04 11:01:20</sys_updated_on>
+        <tablename>sys_decision_question</tablename>
+    </sys_metadata_link>
+</record_update>
