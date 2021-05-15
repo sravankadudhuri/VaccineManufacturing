@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Vial" max_length="40" name="x_snc_vac_mfgr_lab_vial" sizeclass="1000" type="collection">
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Batch" max_length="32" name="batch" reference="x_snc_vac_mfgr_lab_vaccine_batch" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Doses" max_length="40" name="doses" type="integer"/>
+        <element label="mL" max_length="10" name="ml" type="string"/>
+        <element default="javascript:getNextObjNumberPadded();" dynamic_default_value="fdcb83a85f220100a9ad2572f2b4773c" label="Number" max_length="40" name="number" type="string" use_dynamic_default="true"/>
+        <index name="index">
+            <element name="batch"/>
+        </index>
+    </element>
+</database>

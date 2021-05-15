@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="State" max_length="40" name="x_snc_vac_mfgr_lab_state" sizeclass="51" type="collection">
+        <element label="Abbreviation" max_length="2" name="abbreviation" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="0" label="Doses" max_length="40" name="doses" type="integer"/>
+        <element label="Name" max_length="40" name="name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Population" max_length="40" name="population" type="integer"/>
+    </element>
+</database>

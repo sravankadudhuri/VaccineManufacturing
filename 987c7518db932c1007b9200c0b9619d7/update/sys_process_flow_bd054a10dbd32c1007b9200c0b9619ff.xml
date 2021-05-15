@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_process_flow">
+    <sys_process_flow action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_snc_vac_mfgr_lab_vaccine_batch">status=fda_qc^EQ<item display_value="FDA QC" endquery="false" field="status" goto="false" newquery="false" operator="=" or="false" value="fda_qc"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <description/>
+        <label>FDA QC</label>
+        <name>FDA QC</name>
+        <order>400</order>
+        <sys_class_name>sys_process_flow</sys_class_name>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-03-30 21:04:31</sys_created_on>
+        <sys_id>bd054a10dbd32c1007b9200c0b9619ff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FDA QC</sys_name>
+        <sys_package display_value="Vaccine Manufacturing &amp; Logistics" source="x_snc_vac_mfgr_lab">987c7518db932c1007b9200c0b9619d7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Vaccine Manufacturing &amp; Logistics">987c7518db932c1007b9200c0b9619d7</sys_scope>
+        <sys_update_name>sys_process_flow_bd054a10dbd32c1007b9200c0b9619ff</sys_update_name>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-03-30 21:04:31</sys_updated_on>
+        <table>x_snc_vac_mfgr_lab_vaccine_batch</table>
+    </sys_process_flow>
+</record_update>

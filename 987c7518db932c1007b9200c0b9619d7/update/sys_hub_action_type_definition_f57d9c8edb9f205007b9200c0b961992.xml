@@ -1,0 +1,1987 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <ih_action>true</ih_action>
+        <internal_name>get_covid_cases_this_week</internal_name>
+        <label_cache>[{"name":"{{action.state}}","label":"action➛State","type":"action","ref":""},{"name":"{{step[d5e7f688-d6a7-4190-97ad-23d5abc48f6f].variable}}","label":"step➛Create REST Resource➛variable","type":"step","ref":""},{"name":"{{step[d5e7f688-d6a7-4190-97ad-23d5abc48f6f].instance_url}}","label":"step➛Create REST Resource➛Instance URL","type":"step","ref":""},{"name":"{{step[fb72c0ae-e9d7-491e-9cca-949d57e71ad6].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":""},{"name":"{{step[9676a6db-9977-4d7e-85e3-175696375e21].case_array}}","label":"step➛Script step➛Case Array","type":"step","ref":""},{"name":"{{step[9676a6db-9977-4d7e-85e3-175696375e21].output_array}}","label":"step➛Script step➛Output Array","type":"step","ref":""},{"name":"{{step[9676a6db-9977-4d7e-85e3-175696375e21].output_array.Data.output_array_child0_child1}}","label":"step➛Script step➛Output Array➛Data➛Output Array_child0_child1","type":"step","ref":""},{"name":"{{step[9676a6db-9977-4d7e-85e3-175696375e21].output_array.Data.cases}}","label":"step➛Script step➛Output Array➛Data➛cases","type":"step","ref":""},{"name":"{{step[9676a6db-9977-4d7e-85e3-175696375e21].output_array.Data}}","label":"step➛Script step➛Output Array➛Data","type":"step","ref":""},{"name":"{{step[9676a6db-9977-4d7e-85e3-175696375e21].output_array.Data.data_child2}}","label":"step➛Script step➛Output Array➛Data➛Data_child2","type":"step","ref":""},{"name":"{{step[9676a6db-9977-4d7e-85e3-175696375e21].output_array.Data.state}}","label":"step➛Script step➛Output Array➛Data➛state","type":"step","ref":""},{"name":"{{step[9676a6db-9977-4d7e-85e3-175696375e21].output_array.Data.data_child3}}","label":"step➛Script step➛Output Array➛Data➛Data_child3","type":"step","ref":""},{"name":"{{step[9676a6db-9977-4d7e-85e3-175696375e21].output_array.Data.date}}","label":"step➛Script step➛Output Array➛Data➛date","type":"step","ref":""},{"name":"{{step[9676a6db-9977-4d7e-85e3-175696375e21].case_array.Case Array_child0}}","label":"step➛Script step➛Case Array➛cases","type":"step","ref":""},{"name":"{{step[9676a6db-9977-4d7e-85e3-175696375e21].case_array.cases}}","label":"step➛Script step➛Case Array➛cases","type":"step","ref":""}]</label_cache>
+        <latest_snapshot>5b97e0cadbdf205007b9200c0b961966</latest_snapshot>
+        <master_snapshot>5a512c82dbdf205007b9200c0b9619e7</master_snapshot>
+        <name>Get Requested Batch Sizes by State</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:01:24</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f57d9c8edb9f205007b9200c0b961992</sys_id>
+        <sys_mod_count>47</sys_mod_count>
+        <sys_name>Get Requested Batch Sizes by State</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Vaccine Manufacturing &amp; Logistics" source="x_snc_vac_mfgr_lab">987c7518db932c1007b9200c0b9619d7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Vaccine Manufacturing &amp; Logistics">987c7518db932c1007b9200c0b9619d7</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_f57d9c8edb9f205007b9200c0b961992</sys_update_name>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:45:45</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=f57d9c8edb9f205007b9200c0b961992"/>
+    <sys_variable_value action="delete_multiple" query="document_key=f57d9c8edb9f205007b9200c0b961992"/>
+    <sys_element_mapping action="delete_multiple" query="id=f57d9c8edb9f205007b9200c0b961992"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>case_array</field>
+        <id>f57d9c8edb9f205007b9200c0b961992</id>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:26:38</sys_created_on>
+        <sys_id>4f336046dbdf205007b9200c0b96192a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:37:54</sys_updated_on>
+        <table>var__m_sys_hub_action_output_f57d9c8edb9f205007b9200c0b961992</table>
+        <value>{{step[9676a6db-9977-4d7e-85e3-175696375e21].case_array}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>output_array</field>
+        <id>f57d9c8edb9f205007b9200c0b961992</id>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:17:19</sys_created_on>
+        <sys_id>ba112882dbdf205007b9200c0b961902</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:27:42</sys_updated_on>
+        <table>var__m_sys_hub_action_output_f57d9c8edb9f205007b9200c0b961992</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=f57d9c8edb9f205007b9200c0b961992^sys_idNOT IN115f9c02dbdf205007b9200c0b961915,9bded402dbdf205007b9200c0b96195d,e3cddc8edb9f205007b9200c0b96192b"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Get Requested Batch Sizes by State">f57d9c8edb9f205007b9200c0b961992</action>
+        <cid>9676a6db-9977-4d7e-85e3-175696375e21</cid>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>3</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:09:35</sys_created_on>
+        <sys_id>115f9c02dbdf205007b9200c0b961915</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="Vaccine Manufacturing &amp; Logistics">987c7518db932c1007b9200c0b9619d7</sys_scope>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:29:14</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=115f9c02dbdf205007b9200c0b961915"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>115f9c02dbdf205007b9200c0b961915</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:12:28</sys_created_on>
+        <sys_id>2bffd442dbdf205007b9200c0b961982</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:12:28</sys_updated_on>
+        <value/>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>115f9c02dbdf205007b9200c0b961915</document_key>
+        <order>350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:12:28</sys_created_on>
+        <sys_id>67ffd442dbdf205007b9200c0b961982</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:12:28</sys_updated_on>
+        <value/>
+        <variable display_value="MID Selection">cbd1070373531010791f94596bf6a776</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>115f9c02dbdf205007b9200c0b961915</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:09:35</sys_created_on>
+        <sys_id>e95f9c02dbdf205007b9200c0b961927</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:29:14</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+var payloadObject = JSON.parse(inputs.payload);
+  var dataArray = payloadObject.result.data;
+  var caseArray = [];
+  for (i=0;i&lt;dataArray.length;i++) {
+    caseArray.push(parseInt(dataArray[i].cases));
+  }
+  outputs.case_array = caseArray;
+})(inputs, outputs);
+</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>115f9c02dbdf205007b9200c0b961915</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:12:28</sys_created_on>
+        <sys_id>ebffd442dbdf205007b9200c0b961982</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:12:28</sys_updated_on>
+        <value/>
+        <variable display_value="Select MID Server">2c226939b3101300176b051a16a8dc83</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=115f9c02dbdf205007b9200c0b961915"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>115f9c02dbdf205007b9200c0b961915</id>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:12:28</sys_created_on>
+        <sys_id>afffd442dbdf205007b9200c0b961981</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:12:28</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>mid_selection</field>
+        <id>115f9c02dbdf205007b9200c0b961915</id>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:12:28</sys_created_on>
+        <sys_id>ebffd442dbdf205007b9200c0b961981</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:12:28</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>mid_selection_type</field>
+        <id>115f9c02dbdf205007b9200c0b961915</id>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:12:28</sys_created_on>
+        <sys_id>63ffd442dbdf205007b9200c0b961982</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:12:28</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>payload</field>
+        <id>115f9c02dbdf205007b9200c0b961915</id>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:09:35</sys_created_on>
+        <sys_id>655f9c02dbdf205007b9200c0b961928</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:09:35</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_115f9c02dbdf205007b9200c0b961915</table>
+        <value>{{step[fb72c0ae-e9d7-491e-9cca-949d57e71ad6].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>115f9c02dbdf205007b9200c0b961915</id>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:09:35</sys_created_on>
+        <sys_id>695f9c02dbdf205007b9200c0b961927</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:09:35</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=115f9c02dbdf205007b9200c0b961915^sys_idNOT IN555f9c02dbdf205007b9200c0b961918"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>payload</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">115f9c02dbdf205007b9200c0b961915</model>
+        <model_id>115f9c02dbdf205007b9200c0b961915</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_115f9c02dbdf205007b9200c0b961915</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:09:35</sys_created_on>
+        <sys_id>555f9c02dbdf205007b9200c0b961918</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Vaccine Manufacturing &amp; Logistics">987c7518db932c1007b9200c0b9619d7</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:09:35</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=115f9c02dbdf205007b9200c0b961915^sys_idNOT INc7336046dbdf205007b9200c0b961904"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=15fc9ddc-d47e-46e3-8225-33c529cf48d2</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>case_array</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Case Array</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">115f9c02dbdf205007b9200c0b961915</model>
+        <model_id>115f9c02dbdf205007b9200c0b961915</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_115f9c02dbdf205007b9200c0b961915</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:26:37</sys_created_on>
+        <sys_id>c7336046dbdf205007b9200c0b961904</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Vaccine Manufacturing &amp; Logistics">987c7518db932c1007b9200c0b9619d7</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:43:39</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Get Requested Batch Sizes by State">f57d9c8edb9f205007b9200c0b961992</action>
+        <cid>fb72c0ae-e9d7-491e-9cca-949d57e71ad6</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>REST step</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:07:31</sys_created_on>
+        <sys_id>9bded402dbdf205007b9200c0b96195d</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Vaccine Manufacturing &amp; Logistics">987c7518db932c1007b9200c0b9619d7</sys_scope>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:32:20</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=9bded402dbdf205007b9200c0b96195d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>9bded402dbdf205007b9200c0b96195d</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:07:31</sys_created_on>
+        <sys_id>1bded402dbdf205007b9200c0b961995</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:32:20</sys_updated_on>
+        <value>{}</value>
+        <variable display_value="Query Parameters">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>9bded402dbdf205007b9200c0b96195d</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:07:31</sys_created_on>
+        <sys_id>1fded402dbdf205007b9200c0b961994</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:07:31</sys_updated_on>
+        <value>/api/x_snc_ny_git_covid/coviddata</value>
+        <variable display_value="Resource Path">3d090af03b23320057a4a2e334efc455</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>9bded402dbdf205007b9200c0b96195d</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:07:31</sys_created_on>
+        <sys_id>57ded402dbdf205007b9200c0b961995</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:07:31</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>9bded402dbdf205007b9200c0b96195d</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:09:35</sys_created_on>
+        <sys_id>5d5f9c02dbdf205007b9200c0b961911</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:09:35</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="Headers">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>9bded402dbdf205007b9200c0b96195d</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:07:31</sys_created_on>
+        <sys_id>93ded402dbdf205007b9200c0b961995</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:07:31</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="Capabilities">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>9bded402dbdf205007b9200c0b96195d</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:07:31</sys_created_on>
+        <sys_id>dfded402dbdf205007b9200c0b961994</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:07:31</sys_updated_on>
+        <value>define_connection_inline</value>
+        <variable display_value="Connection">91e207d03b50030057a4a2e334efc4a0</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=9bded402dbdf205007b9200c0b96195d"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>9bded402dbdf205007b9200c0b96195d</id>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:07:31</sys_created_on>
+        <sys_id>d7ded402dbdf205007b9200c0b961994</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:07:31</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>base_url</field>
+        <id>9bded402dbdf205007b9200c0b96195d</id>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:07:31</sys_created_on>
+        <sys_id>17ded402dbdf205007b9200c0b961994</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:07:31</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{{step[d5e7f688-d6a7-4190-97ad-23d5abc48f6f].instance_url}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>capabilities</field>
+        <id>9bded402dbdf205007b9200c0b96195d</id>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:07:31</sys_created_on>
+        <sys_id>53ded402dbdf205007b9200c0b961994</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:07:31</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection</field>
+        <id>9bded402dbdf205007b9200c0b96195d</id>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:07:31</sys_created_on>
+        <sys_id>9fded402dbdf205007b9200c0b961993</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:07:31</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>headers</field>
+        <id>9bded402dbdf205007b9200c0b96195d</id>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:09:35</sys_created_on>
+        <sys_id>d95f9c02dbdf205007b9200c0b961911</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:09:35</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>query_params</field>
+        <id>9bded402dbdf205007b9200c0b96195d</id>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:07:31</sys_created_on>
+        <sys_id>9bded402dbdf205007b9200c0b961994</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:32:20</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{"type":"ADV_NV","value":[{"name":"sysparm_query","value":"dateONThis week@javascript:gs.beginningOfThisWeek()@javascript:gs.endOfThisWeek()^state={{action.state}}","attributes":{"omit_if_empty":false,"mandatory":false}}]}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>resource_path</field>
+        <id>9bded402dbdf205007b9200c0b96195d</id>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:07:31</sys_created_on>
+        <sys_id>dbded402dbdf205007b9200c0b961993</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:07:31</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Get Requested Batch Sizes by State">f57d9c8edb9f205007b9200c0b961992</action>
+        <cid>d5e7f688-d6a7-4190-97ad-23d5abc48f6f</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Create REST Resource</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:02:53</sys_created_on>
+        <sys_id>e3cddc8edb9f205007b9200c0b96192b</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Vaccine Manufacturing &amp; Logistics">987c7518db932c1007b9200c0b9619d7</sys_scope>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:05:48</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e3cddc8edb9f205007b9200c0b96192b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>e3cddc8edb9f205007b9200c0b96192b</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:05:48</sys_created_on>
+        <sys_id>067e5002dbdf205007b9200c0b961941</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:05:48</sys_updated_on>
+        <value/>
+        <variable display_value="Select MID Server">2c226939b3101300176b051a16a8dc83</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>e3cddc8edb9f205007b9200c0b96192b</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:05:48</sys_created_on>
+        <sys_id>427e5002dbdf205007b9200c0b961941</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:05:48</sys_updated_on>
+        <value/>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>e3cddc8edb9f205007b9200c0b96192b</document_key>
+        <order>350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:05:48</sys_created_on>
+        <sys_id>4e7e5002dbdf205007b9200c0b961940</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:05:48</sys_updated_on>
+        <value/>
+        <variable display_value="MID Selection">cbd1070373531010791f94596bf6a776</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>e3cddc8edb9f205007b9200c0b96192b</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:02:54</sys_created_on>
+        <sys_id>67cd14cedb9f205007b9200c0b9619f9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:05:48</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+var instanceURL = gs.getProperty('x_snc_vac_mfgr_lab.nytime.covid.instance');
+if (instanceURL == '') {
+ outputs.instance_url = 'https://mslabscdev01.service-now.com'; 
+}
+  else
+    outputs.instance_url = instanceURL;
+})(inputs, outputs);
+</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=e3cddc8edb9f205007b9200c0b96192b^sys_idNOT IN67cd14cedb9f205007b9200c0b9619bd"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=84507e71-30a0-472b-babe-85bd6b764250</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>instance_url</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Instance URL</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create REST Resource">e3cddc8edb9f205007b9200c0b96192b</model>
+        <model_id>e3cddc8edb9f205007b9200c0b96192b</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_e3cddc8edb9f205007b9200c0b96192b</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:02:54</sys_created_on>
+        <sys_id>67cd14cedb9f205007b9200c0b9619bd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Vaccine Manufacturing &amp; Logistics">987c7518db932c1007b9200c0b9619d7</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:02:54</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_action_input action="delete_multiple" query="model=f57d9c8edb9f205007b9200c0b961992^sys_idNOT IN6284a886dbdf205007b9200c0b961916"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=a8ec69a2-9952-43c5-b983-6e71fdaecfad</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>Ohio</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>state</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>State</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Requested Batch Sizes by State">f57d9c8edb9f205007b9200c0b961992</model>
+        <model_id>f57d9c8edb9f205007b9200c0b961992</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_f57d9c8edb9f205007b9200c0b961992</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:32:19</sys_created_on>
+        <sys_id>6284a886dbdf205007b9200c0b961916</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Vaccine Manufacturing &amp; Logistics">987c7518db932c1007b9200c0b9619d7</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:33:40</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_output action="delete_multiple" query="model=f57d9c8edb9f205007b9200c0b961992^sys_idNOT INcb336046dbdf205007b9200c0b961921"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=bc33bb27-419b-4191-aedc-94e7b5deb257</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>case_array</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Case Array</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Requested Batch Sizes by State">f57d9c8edb9f205007b9200c0b961992</model>
+        <model_id>f57d9c8edb9f205007b9200c0b961992</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_f57d9c8edb9f205007b9200c0b961992</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:26:37</sys_created_on>
+        <sys_id>cb336046dbdf205007b9200c0b961921</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Vaccine Manufacturing &amp; Logistics">987c7518db932c1007b9200c0b9619d7</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:43:39</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=f57d9c8edb9f205007b9200c0b961992^sys_idNOT IN1196e44adbdf205007b9200c0b961952,5d96e44adbdf205007b9200c0b961951"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>f57d9c8edb9f205007b9200c0b961992</attached_to>
+        <extra_info/>
+        <order>1</order>
+        <prescription/>
+        <source_ui_id>9e3fdad7-755a-4d2d-b71a-1301f3def1d4</source_ui_id>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:41:15</sys_created_on>
+        <sys_id>1196e44adbdf205007b9200c0b961952</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Vaccine Manufacturing &amp; Logistics">987c7518db932c1007b9200c0b9619d7</sys_scope>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:41:15</sys_updated_on>
+        <transform_compositions>[{"id":"c91e0bb70f233300f4166fe7c4767e9e","transformType":null,"transformDefinition":null,"order":0,"parameters":[]}]</transform_compositions>
+        <transform_definition_id display_value="max">10ed87b70f233300f4166fe7c4767e5d</transform_definition_id>
+        <ui_id>076e3dc6-ab74-4223-9cd8-962c90275e76</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>f57d9c8edb9f205007b9200c0b961992</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{step[9676a6db-9977-4d7e-85e3-175696375e21].case_array}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:41:15</sys_created_on>
+        <sys_id>5d96e44adbdf205007b9200c0b961951</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Vaccine Manufacturing &amp; Logistics">987c7518db932c1007b9200c0b9619d7</sys_scope>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:41:15</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>9e3fdad7-755a-4d2d-b71a-1301f3def1d4</ui_id>
+    </sys_hub_pill_compound>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_f57d9c8edb9f205007b9200c0b961992^sys_idNOT IN6a84a886dbdf205007b9200c0b96191c"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>state</element>
+        <help/>
+        <hint/>
+        <label>State</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_f57d9c8edb9f205007b9200c0b961992</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:32:19</sys_created_on>
+        <sys_id>6a84a886dbdf205007b9200c0b96191c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>State</sys_name>
+        <sys_package display_value="Vaccine Manufacturing &amp; Logistics" source="x_snc_vac_mfgr_lab">987c7518db932c1007b9200c0b9619d7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Vaccine Manufacturing &amp; Logistics">987c7518db932c1007b9200c0b9619d7</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_f57d9c8edb9f205007b9200c0b961992_state_en</sys_update_name>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:32:19</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_f57d9c8edb9f205007b9200c0b961992^sys_idNOT INcb336046dbdf205007b9200c0b961927"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>case_array</element>
+        <help/>
+        <hint/>
+        <label>Case Array</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_f57d9c8edb9f205007b9200c0b961992</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:26:37</sys_created_on>
+        <sys_id>cb336046dbdf205007b9200c0b961927</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Case Array</sys_name>
+        <sys_package display_value="Vaccine Manufacturing &amp; Logistics" source="x_snc_vac_mfgr_lab">987c7518db932c1007b9200c0b9619d7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Vaccine Manufacturing &amp; Logistics">987c7518db932c1007b9200c0b9619d7</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_f57d9c8edb9f205007b9200c0b961992_case_array_en</sys_update_name>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:26:37</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=f57d9c8edb9f205007b9200c0b961992^sys_idNOT IN4b516c82dbdf205007b9200c0b9619e5"/>
+    <sys_hub_action_plan action="INSERT_OR_UPDATE">
+        <action_id display_value="Get Requested Batch Sizes by State">f57d9c8edb9f205007b9200c0b961992</action_id>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"4b516c82dbdf205007b9200c0b9619e5","name":"plan"}}</plan>
+        <snapshot>5b97e0cadbdf205007b9200c0b961966</snapshot>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:18:25</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4b516c82dbdf205007b9200c0b9619e5</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:45:47</sys_updated_on>
+    </sys_hub_action_plan>
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_template/>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>get_covid_cases_this_week</internal_name>
+        <label_cache>[{"name":"{{action.state}}","label":"action➛State","type":"action","ref":""},{"name":"{{step[d5e7f688-d6a7-4190-97ad-23d5abc48f6f].variable}}","label":"step➛Create REST Resource➛variable","type":"step","ref":""},{"name":"{{step[d5e7f688-d6a7-4190-97ad-23d5abc48f6f].instance_url}}","label":"step➛Create REST Resource➛Instance URL","type":"step","ref":""},{"name":"{{step[fb72c0ae-e9d7-491e-9cca-949d57e71ad6].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":""},{"name":"{{step[9676a6db-9977-4d7e-85e3-175696375e21].case_array}}","label":"step➛Script step➛Case Array","type":"step","ref":""},{"name":"{{step[9676a6db-9977-4d7e-85e3-175696375e21].output_array}}","label":"step➛Script step➛Output Array","type":"step","ref":""},{"name":"{{step[9676a6db-9977-4d7e-85e3-175696375e21].output_array.Data.output_array_child0_child1}}","label":"step➛Script step➛Output Array➛Data➛Output Array_child0_child1","type":"step","ref":""},{"name":"{{step[9676a6db-9977-4d7e-85e3-175696375e21].output_array.Data.cases}}","label":"step➛Script step➛Output Array➛Data➛cases","type":"step","ref":""},{"name":"{{step[9676a6db-9977-4d7e-85e3-175696375e21].output_array.Data}}","label":"step➛Script step➛Output Array➛Data","type":"step","ref":""},{"name":"{{step[9676a6db-9977-4d7e-85e3-175696375e21].output_array.Data.data_child2}}","label":"step➛Script step➛Output Array➛Data➛Data_child2","type":"step","ref":""},{"name":"{{step[9676a6db-9977-4d7e-85e3-175696375e21].output_array.Data.state}}","label":"step➛Script step➛Output Array➛Data➛state","type":"step","ref":""},{"name":"{{step[9676a6db-9977-4d7e-85e3-175696375e21].output_array.Data.data_child3}}","label":"step➛Script step➛Output Array➛Data➛Data_child3","type":"step","ref":""},{"name":"{{step[9676a6db-9977-4d7e-85e3-175696375e21].output_array.Data.date}}","label":"step➛Script step➛Output Array➛Data➛date","type":"step","ref":""},{"name":"{{step[9676a6db-9977-4d7e-85e3-175696375e21].case_array.Case Array_child0}}","label":"step➛Script step➛Case Array➛cases","type":"step","ref":""},{"name":"{{step[9676a6db-9977-4d7e-85e3-175696375e21].case_array.cases}}","label":"step➛Script step➛Case Array➛cases","type":"step","ref":""}]</label_cache>
+        <master>true</master>
+        <name>Get Requested Batch Sizes by State</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <parent_action display_value="Get Requested Batch Sizes by State">f57d9c8edb9f205007b9200c0b961992</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:18:23</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5a512c82dbdf205007b9200c0b9619e7</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Vaccine Manufacturing &amp; Logistics">987c7518db932c1007b9200c0b9619d7</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:45:45</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=5a512c82dbdf205007b9200c0b9619e7"/>
+    <sys_variable_value action="delete_multiple" query="document_key=5a512c82dbdf205007b9200c0b9619e7"/>
+    <sys_element_mapping action="delete_multiple" query="id=5a512c82dbdf205007b9200c0b9619e7"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>case_array</field>
+        <id>5a512c82dbdf205007b9200c0b9619e7</id>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:33:56</sys_created_on>
+        <sys_id>d6e4e0c6dbdf205007b9200c0b9619d2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:33:56</sys_updated_on>
+        <table>var__m_sys_hub_action_output_5a512c82dbdf205007b9200c0b9619e7</table>
+        <value>{{step[9676a6db-9977-4d7e-85e3-175696375e21].case_array}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>output_array</field>
+        <id>5a512c82dbdf205007b9200c0b9619e7</id>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:18:24</sys_created_on>
+        <sys_id>e6516c82dbdf205007b9200c0b961933</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:18:24</sys_updated_on>
+        <table>var__m_sys_hub_action_output_5a512c82dbdf205007b9200c0b9619e7</table>
+        <value>{{step[9676a6db-9977-4d7e-85e3-175696375e21].output_array}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=5a512c82dbdf205007b9200c0b9619e7^sys_idNOT IN1e516c82dbdf205007b9200c0b96190c,9a512c82dbdf205007b9200c0b9619fb,d2512c82dbdf205007b9200c0b9619eb"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Get Requested Batch Sizes by State">5a512c82dbdf205007b9200c0b9619e7</action>
+        <cid>9676a6db-9977-4d7e-85e3-175696375e21</cid>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>3</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:18:23</sys_created_on>
+        <sys_id>1e516c82dbdf205007b9200c0b96190c</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Vaccine Manufacturing &amp; Logistics">987c7518db932c1007b9200c0b9619d7</sys_scope>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:33:56</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=1e516c82dbdf205007b9200c0b96190c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>1e516c82dbdf205007b9200c0b96190c</document_key>
+        <order>350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:18:23</sys_created_on>
+        <sys_id>2e516c82dbdf205007b9200c0b961923</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:18:23</sys_updated_on>
+        <value/>
+        <variable display_value="MID Selection">cbd1070373531010791f94596bf6a776</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>1e516c82dbdf205007b9200c0b96190c</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:18:23</sys_created_on>
+        <sys_id>66516c82dbdf205007b9200c0b961924</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:33:56</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+var payloadObject = JSON.parse(inputs.payload);
+  var dataArray = payloadObject.result.data;
+  var caseArray = [];
+  for (i=0;i&lt;dataArray.length;i++) {
+    caseArray.push(parseInt(dataArray[i].cases));
+  }
+  outputs.case_array = caseArray;
+})(inputs, outputs);
+</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>1e516c82dbdf205007b9200c0b96190c</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:18:23</sys_created_on>
+        <sys_id>a2516c82dbdf205007b9200c0b961924</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:18:23</sys_updated_on>
+        <value/>
+        <variable display_value="Select MID Server">2c226939b3101300176b051a16a8dc83</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>1e516c82dbdf205007b9200c0b96190c</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:18:23</sys_created_on>
+        <sys_id>ee516c82dbdf205007b9200c0b961923</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:18:23</sys_updated_on>
+        <value/>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=1e516c82dbdf205007b9200c0b96190c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>1e516c82dbdf205007b9200c0b96190c</id>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:18:23</sys_created_on>
+        <sys_id>26516c82dbdf205007b9200c0b961923</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:18:23</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>mid_selection</field>
+        <id>1e516c82dbdf205007b9200c0b96190c</id>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:18:23</sys_created_on>
+        <sys_id>62516c82dbdf205007b9200c0b961923</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:18:23</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>mid_selection_type</field>
+        <id>1e516c82dbdf205007b9200c0b96190c</id>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:18:23</sys_created_on>
+        <sys_id>e6516c82dbdf205007b9200c0b961923</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:18:23</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>payload</field>
+        <id>1e516c82dbdf205007b9200c0b96190c</id>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:18:23</sys_created_on>
+        <sys_id>ee516c82dbdf205007b9200c0b961924</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:18:23</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_1e516c82dbdf205007b9200c0b96190c</table>
+        <value>{{step[fb72c0ae-e9d7-491e-9cca-949d57e71ad6].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>1e516c82dbdf205007b9200c0b96190c</id>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:18:23</sys_created_on>
+        <sys_id>aa516c82dbdf205007b9200c0b961923</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:18:23</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=1e516c82dbdf205007b9200c0b96190c^sys_idNOT IN22516c82dbdf205007b9200c0b961910"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>payload</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>payload</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">1e516c82dbdf205007b9200c0b96190c</model>
+        <model_id>1e516c82dbdf205007b9200c0b96190c</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_1e516c82dbdf205007b9200c0b96190c</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:18:23</sys_created_on>
+        <sys_id>22516c82dbdf205007b9200c0b961910</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Vaccine Manufacturing &amp; Logistics">987c7518db932c1007b9200c0b9619d7</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:18:23</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=1e516c82dbdf205007b9200c0b96190c^sys_idNOT IN0ee4e0c6dbdf205007b9200c0b96198f"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=15fc9ddc-d47e-46e3-8225-33c529cf48d2</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>case_array</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Case Array</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">1e516c82dbdf205007b9200c0b96190c</model>
+        <model_id>1e516c82dbdf205007b9200c0b96190c</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_1e516c82dbdf205007b9200c0b96190c</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:33:56</sys_created_on>
+        <sys_id>0ee4e0c6dbdf205007b9200c0b96198f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Vaccine Manufacturing &amp; Logistics">987c7518db932c1007b9200c0b9619d7</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:44:00</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Get Requested Batch Sizes by State">5a512c82dbdf205007b9200c0b9619e7</action>
+        <cid>fb72c0ae-e9d7-491e-9cca-949d57e71ad6</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>REST step</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:18:23</sys_created_on>
+        <sys_id>9a512c82dbdf205007b9200c0b9619fb</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Vaccine Manufacturing &amp; Logistics">987c7518db932c1007b9200c0b9619d7</sys_scope>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:33:56</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=9a512c82dbdf205007b9200c0b9619fb"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>9a512c82dbdf205007b9200c0b9619fb</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:18:23</sys_created_on>
+        <sys_id>12516c82dbdf205007b9200c0b961909</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:18:23</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="Headers">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>9a512c82dbdf205007b9200c0b9619fb</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:18:23</sys_created_on>
+        <sys_id>5a516c82dbdf205007b9200c0b961909</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:33:56</sys_updated_on>
+        <value>{}</value>
+        <variable display_value="Query Parameters">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>9a512c82dbdf205007b9200c0b9619fb</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:18:23</sys_created_on>
+        <sys_id>5e516c82dbdf205007b9200c0b961908</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:18:23</sys_updated_on>
+        <value>define_connection_inline</value>
+        <variable display_value="Connection">91e207d03b50030057a4a2e334efc4a0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>9a512c82dbdf205007b9200c0b9619fb</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:18:23</sys_created_on>
+        <sys_id>96516c82dbdf205007b9200c0b961909</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:18:23</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>9a512c82dbdf205007b9200c0b9619fb</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:18:23</sys_created_on>
+        <sys_id>9a516c82dbdf205007b9200c0b961908</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:18:23</sys_updated_on>
+        <value>/api/x_snc_ny_git_covid/coviddata</value>
+        <variable display_value="Resource Path">3d090af03b23320057a4a2e334efc455</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>9a512c82dbdf205007b9200c0b9619fb</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:18:23</sys_created_on>
+        <sys_id>d2516c82dbdf205007b9200c0b961909</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:18:23</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="Capabilities">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=9a512c82dbdf205007b9200c0b9619fb"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>9a512c82dbdf205007b9200c0b9619fb</id>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:18:23</sys_created_on>
+        <sys_id>56516c82dbdf205007b9200c0b961908</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:18:23</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>base_url</field>
+        <id>9a512c82dbdf205007b9200c0b9619fb</id>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:18:23</sys_created_on>
+        <sys_id>92516c82dbdf205007b9200c0b961908</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:18:23</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{{step[d5e7f688-d6a7-4190-97ad-23d5abc48f6f].instance_url}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>capabilities</field>
+        <id>9a512c82dbdf205007b9200c0b9619fb</id>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:18:23</sys_created_on>
+        <sys_id>de516c82dbdf205007b9200c0b961907</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:18:23</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection</field>
+        <id>9a512c82dbdf205007b9200c0b9619fb</id>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:18:23</sys_created_on>
+        <sys_id>5a516c82dbdf205007b9200c0b961907</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:18:23</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>headers</field>
+        <id>9a512c82dbdf205007b9200c0b9619fb</id>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:18:23</sys_created_on>
+        <sys_id>1e516c82dbdf205007b9200c0b961907</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:18:23</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>query_params</field>
+        <id>9a512c82dbdf205007b9200c0b9619fb</id>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:18:23</sys_created_on>
+        <sys_id>1a516c82dbdf205007b9200c0b961908</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:33:56</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{"type":"ADV_NV","value":[{"name":"sysparm_query","value":"dateONThis week@javascript:gs.beginningOfThisWeek()@javascript:gs.endOfThisWeek()^state={{action.state}}","attributes":{"omit_if_empty":false,"mandatory":false}}]}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>resource_path</field>
+        <id>9a512c82dbdf205007b9200c0b9619fb</id>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:18:23</sys_created_on>
+        <sys_id>96516c82dbdf205007b9200c0b961907</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:18:23</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Get Requested Batch Sizes by State">5a512c82dbdf205007b9200c0b9619e7</action>
+        <cid>d5e7f688-d6a7-4190-97ad-23d5abc48f6f</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Create REST Resource</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:18:23</sys_created_on>
+        <sys_id>d2512c82dbdf205007b9200c0b9619eb</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Vaccine Manufacturing &amp; Logistics">987c7518db932c1007b9200c0b9619d7</sys_scope>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:18:23</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=d2512c82dbdf205007b9200c0b9619eb"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>d2512c82dbdf205007b9200c0b9619eb</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:18:23</sys_created_on>
+        <sys_id>12512c82dbdf205007b9200c0b9619f9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:18:23</sys_updated_on>
+        <value/>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>d2512c82dbdf205007b9200c0b9619eb</document_key>
+        <order>350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:18:23</sys_created_on>
+        <sys_id>5e512c82dbdf205007b9200c0b9619f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:18:23</sys_updated_on>
+        <value/>
+        <variable display_value="MID Selection">cbd1070373531010791f94596bf6a776</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>d2512c82dbdf205007b9200c0b9619eb</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:18:23</sys_created_on>
+        <sys_id>96512c82dbdf205007b9200c0b9619f9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:18:23</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+var instanceURL = gs.getProperty('x_snc_vac_mfgr_lab.nytime.covid.instance');
+if (instanceURL == '') {
+ outputs.instance_url = 'https://mslabscdev01.service-now.com'; 
+}
+  else
+    outputs.instance_url = instanceURL;
+})(inputs, outputs);
+</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>d2512c82dbdf205007b9200c0b9619eb</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:18:23</sys_created_on>
+        <sys_id>d2512c82dbdf205007b9200c0b9619f9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:18:23</sys_updated_on>
+        <value/>
+        <variable display_value="Select MID Server">2c226939b3101300176b051a16a8dc83</variable>
+    </sys_variable_value>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=d2512c82dbdf205007b9200c0b9619eb^sys_idNOT IN52512c82dbdf205007b9200c0b9619ef"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=84507e71-30a0-472b-babe-85bd6b764250</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>instance_url</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Instance URL</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create REST Resource">d2512c82dbdf205007b9200c0b9619eb</model>
+        <model_id>d2512c82dbdf205007b9200c0b9619eb</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_d2512c82dbdf205007b9200c0b9619eb</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:18:23</sys_created_on>
+        <sys_id>52512c82dbdf205007b9200c0b9619ef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Vaccine Manufacturing &amp; Logistics">987c7518db932c1007b9200c0b9619d7</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:18:23</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_action_input action="delete_multiple" query="model=5a512c82dbdf205007b9200c0b9619e7^sys_idNOT INc6e4e0c6dbdf205007b9200c0b961962"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=a8ec69a2-9952-43c5-b983-6e71fdaecfad</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>Ohio</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>state</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>State</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Requested Batch Sizes by State">5a512c82dbdf205007b9200c0b9619e7</model>
+        <model_id>5a512c82dbdf205007b9200c0b9619e7</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_5a512c82dbdf205007b9200c0b9619e7</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:33:55</sys_created_on>
+        <sys_id>c6e4e0c6dbdf205007b9200c0b961962</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Vaccine Manufacturing &amp; Logistics">987c7518db932c1007b9200c0b9619d7</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:33:55</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_output action="delete_multiple" query="model=5a512c82dbdf205007b9200c0b9619e7^sys_idNOT INdae4e0c6dbdf205007b9200c0b9619b3"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=bc33bb27-419b-4191-aedc-94e7b5deb257</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>case_array</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Case Array</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Requested Batch Sizes by State">5a512c82dbdf205007b9200c0b9619e7</model>
+        <model_id>5a512c82dbdf205007b9200c0b9619e7</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_5a512c82dbdf205007b9200c0b9619e7</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:33:56</sys_created_on>
+        <sys_id>dae4e0c6dbdf205007b9200c0b9619b3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Vaccine Manufacturing &amp; Logistics">987c7518db932c1007b9200c0b9619d7</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:44:01</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=5a512c82dbdf205007b9200c0b9619e7^sys_idNOT IN51b62c4adbdf205007b9200c0b96194b,9db62c4adbdf205007b9200c0b96194a"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>5a512c82dbdf205007b9200c0b9619e7</attached_to>
+        <extra_info/>
+        <order>1</order>
+        <prescription/>
+        <source_ui_id>9e3fdad7-755a-4d2d-b71a-1301f3def1d4</source_ui_id>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:41:48</sys_created_on>
+        <sys_id>51b62c4adbdf205007b9200c0b96194b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Vaccine Manufacturing &amp; Logistics">987c7518db932c1007b9200c0b9619d7</sys_scope>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:41:48</sys_updated_on>
+        <transform_compositions>[{"id":"c91e0bb70f233300f4166fe7c4767e9e","transformType":null,"transformDefinition":null,"order":0,"parameters":[]}]</transform_compositions>
+        <transform_definition_id display_value="max">10ed87b70f233300f4166fe7c4767e5d</transform_definition_id>
+        <ui_id>076e3dc6-ab74-4223-9cd8-962c90275e76</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>5a512c82dbdf205007b9200c0b9619e7</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{step[9676a6db-9977-4d7e-85e3-175696375e21].case_array}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:41:48</sys_created_on>
+        <sys_id>9db62c4adbdf205007b9200c0b96194a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Vaccine Manufacturing &amp; Logistics">987c7518db932c1007b9200c0b9619d7</sys_scope>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:41:48</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>9e3fdad7-755a-4d2d-b71a-1301f3def1d4</ui_id>
+    </sys_hub_pill_compound>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_5a512c82dbdf205007b9200c0b9619e7^sys_idNOT IN0ee4e0c6dbdf205007b9200c0b96196c"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>state</element>
+        <help/>
+        <hint/>
+        <label>State</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_5a512c82dbdf205007b9200c0b9619e7</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:33:55</sys_created_on>
+        <sys_id>0ee4e0c6dbdf205007b9200c0b96196c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>State</sys_name>
+        <sys_package display_value="Vaccine Manufacturing &amp; Logistics" source="x_snc_vac_mfgr_lab">987c7518db932c1007b9200c0b9619d7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Vaccine Manufacturing &amp; Logistics">987c7518db932c1007b9200c0b9619d7</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_5a512c82dbdf205007b9200c0b9619e7_state_en</sys_update_name>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:33:55</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_5a512c82dbdf205007b9200c0b9619e7^sys_idNOT INd2e4e0c6dbdf205007b9200c0b9619ba"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>case_array</element>
+        <help/>
+        <hint/>
+        <label>Case Array</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_5a512c82dbdf205007b9200c0b9619e7</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-04-05 00:33:56</sys_created_on>
+        <sys_id>d2e4e0c6dbdf205007b9200c0b9619ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Case Array</sys_name>
+        <sys_package display_value="Vaccine Manufacturing &amp; Logistics" source="x_snc_vac_mfgr_lab">987c7518db932c1007b9200c0b9619d7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Vaccine Manufacturing &amp; Logistics">987c7518db932c1007b9200c0b9619d7</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_5a512c82dbdf205007b9200c0b9619e7_case_array_en</sys_update_name>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-04-05 00:33:56</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+</record_update>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_process_flow">
+    <sys_process_flow action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_snc_vac_mfgr_lab_vaccine_batch">status=QA^EQ<item display_value="QA" endquery="false" field="status" goto="false" newquery="false" operator="=" or="false" value="QA"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <description/>
+        <label>QA</label>
+        <name>QA</name>
+        <order>300</order>
+        <sys_class_name>sys_process_flow</sys_class_name>
+        <sys_created_by>michael.slabodnick</sys_created_by>
+        <sys_created_on>2021-03-30 21:04:09</sys_created_on>
+        <sys_id>98f44e10dbd32c1007b9200c0b961961</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>QA</sys_name>
+        <sys_package display_value="Vaccine Manufacturing &amp; Logistics" source="x_snc_vac_mfgr_lab">987c7518db932c1007b9200c0b9619d7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Vaccine Manufacturing &amp; Logistics">987c7518db932c1007b9200c0b9619d7</sys_scope>
+        <sys_update_name>sys_process_flow_98f44e10dbd32c1007b9200c0b961961</sys_update_name>
+        <sys_updated_by>michael.slabodnick</sys_updated_by>
+        <sys_updated_on>2021-03-30 21:04:09</sys_updated_on>
+        <table>x_snc_vac_mfgr_lab_vaccine_batch</table>
+    </sys_process_flow>
+</record_update>
